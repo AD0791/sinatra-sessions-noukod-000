@@ -56,6 +56,7 @@ class App < Sinatra::Base
     #clear session hash here
     binding.pry
     session[:id].clear
+    binding.pry
     "Session has now been cleared. session content: #{session.inspect}. Continue on to the '/finish' line!"
   end
 
